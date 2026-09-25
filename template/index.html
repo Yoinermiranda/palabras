@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para ti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* ============================================================
+     Para la chica mas fuerte que conozco, que siempre me ha apoyado y que me ha enseñado a ser mejor persona.
+     Gracias por ser mi niña, por tu cariño y por tu paciencia. Te quiero mucho.
+     ============================================================ */
+
+  :root{
+    --crema:#FBF3E7;
+    --cacao:#3C2A1E;
+    --ambar:#D98E3E;
+    --terracota-suave:#C97A5D;
+    --marfil:#F3E4CE;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--crema);
+    color:var(--cacao);
+    font-family:'Karla',sans-serif;
+    line-height:1.6;
+  }
+  h1,h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+  }
+
+  .franja{
+    padding:0 24px;
+  }
+
+  /* HERO */
+  .hero{
+    min-height:78vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:64px 24px;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(217,142,62,0.18), transparent 55%),
+      radial-gradient(circle at 80% 75%, rgba(201,122,93,0.16), transparent 55%),
+      var(--crema);
+  }
+  .hero .ceja{
+    font-size:15px;
+    color:var(--terracota-suave);
+    letter-spacing:.02em;
+    margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:clamp(2.2rem, 6vw, 3.6rem);
+    max-width:14ch;
+    color:var(--cacao);
+  }
+  .hero p{
+    max-width:46ch;
+    font-size:1.15rem;
+    margin-top:20px;
+    color:#5B4636;
+  }
+
+  /* SECCIÓN GENERAL */
+  section{
+    max-width:900px;
+    margin:0 auto;
+    padding:70px 24px;
+  }
+  section h2{
+    font-size:clamp(1.6rem, 3.5vw, 2.2rem);
+    text-align:center;
+    margin-bottom:44px;
+  }
+
+  /* APARTADOS: foto + frase */
+  .apartados{
+    display:flex;
+    flex-direction:column;
+    gap:56px;
+  }
+  .apartado{
+    display:flex;
+    align-items:center;
+    gap:40px;
+  }
+  .apartado:nth-child(even){
+    flex-direction:row-reverse;
+  }
+  .apartado .foto{
+    position:relative;
+    flex:0 0 42%;
+    aspect-ratio:4/5;
+    border-radius:16px;
+    overflow:hidden;
+    background:var(--marfil);
+  }
+  .apartado .foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .apartado .foto .placeholder{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:.85rem;
+    color:#9C7E5C;
+    padding:12px;
+  }
+  .apartado .frase{
+    flex:1;
+    font-family:'Fraunces',serif;
+    font-size:clamp(1.2rem, 2.4vw, 1.6rem);
+    color:var(--cacao);
+  }
+  @media (max-width:700px){
+    .apartado, .apartado:nth-child(even){
+      flex-direction:column;
+      gap:20px;
+    }
+    .apartado .foto{
+      flex:none;
+      width:100%;
+    }
+  }
+
+  /* CIERRE */
+  .cierre{
+    text-align:center;
+    padding:80px 24px 100px;
+  }
+  .cierre h2{
+    font-size:clamp(1.6rem, 4vw, 2.4rem);
+    margin-bottom:16px;
+  }
+  .cierre p{
+    max-width:40ch;
+    margin:0 auto;
+    color:#5B4636;
+  }
+  .firma{
+    margin-top:28px;
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.2rem;
+    color:var(--terracota-suave);
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="hero franja">
+    <div class="ceja">Para alguien muy especial</div>
+    <h1>Mariana El Amor De Mi Vida</h1>
+    <p>Aquí tienes un rinconcito hecho con cariño, solo para recordarte lo importante que eres.</p>
+  </div>
+  <p>Para la chica mas fuerte que conozco, que siempre me ha apoyado y que me ha enseñado a ser mejor persona.
+     Gracias por ser mi niña, por tu cariño y por tu paciencia. Te quiero mucho.</p>
+
+  <section>
+    <h2>Momentos y palabras para ti</h2>
+    <div class="apartados">
+      <!-- Coloca tus fotos en la carpeta "imagenes" con estos nombres, o cambia el nombre del archivo aquí. Cambia también la frase de cada apartado. -->
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (1).jpeg" alt="Foto 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto1.jpg</div></div>
+        <div class="frase">Eres más fuerte de lo que crees, y más querida de lo que imaginas.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (2).jpeg" alt="Foto 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto2.jpg</div></div>
+        <div class="frase">Cada día que sigues intentándolo es una prueba de tu valentía.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (3).jpeg" alt="Foto 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto3.jpg</div></div>
+        <div class="frase">No estás sola en esto. Aquí hay alguien que cree en ti, siempre.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (4).jpeg" alt="Foto 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto4.jpg</div></div>
+        <div class="frase">Está bien tener días difíciles. Lo importante es que sigues aquí.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (5).jpeg" alt="Foto 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto5.jpg</div></div>
+        <div class="frase">Tu forma de ser ilumina a quienes te rodean, aunque tú no siempre lo veas.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (6).jpeg" alt="Foto 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto6.jpg</div></div>
+        <div class="frase">Has salido adelante de cada cosa difícil que has vivido. Esta no será la excepción.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (7).jpeg" alt="Foto 7" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto7.jpg</div></div>
+        <div class="frase">Mereces la misma paciencia y ternura que le das a los demás.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.36 (8).jpeg" alt="Foto 8" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto8.jpg</div></div>
+        <div class="frase">Tu presencia ya es un regalo, no necesitas hacer nada para merecerla.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.37 (1).jpeg" alt="Foto 9" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto9.jpg</div></div>
+        <div class="frase">Este momento difícil también va a pasar, y tú vas a seguir aquí.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.37 (2).jpeg" alt="Foto 10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto10.jpg</div></div>
+        <div class="frase">Hay muchas personas que te queremos exactamente como eres.</div>
+      </div>
+      <div class="apartado">
+        <div class="foto"><img src="image/WhatsApp Image 2026-09-24 at 21.27.37.jpeg" alt="Foto 11" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="placeholder" style="display:none;">Coloca aquí imagenes/foto11.jpg</div></div>
+        <div class="frase">Gracias por existir y por dejarnos caminar un poco de tu vida contigo.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cierre franja">
+    <h2>Con todo mi cariño</h2>
+    <p>Espero que esta página te recuerde, cada vez que la veas, cuánto te queremos y cuánto valemos tenerte cerca.</p>
+    <div class="firma">— con cariño, siempre</div>
+  </div>
+
+</body>
+</html>
